@@ -1,6 +1,3 @@
-Here’s a **README.md** file for your **Book-Store** project:  
-
----
 
 ### 📚 **Book-Store**  
 A simple book store application where users can **read** and **buy books**.  
