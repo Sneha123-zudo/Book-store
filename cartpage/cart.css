@@ -1,0 +1,232 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(178, 121, 46);
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 50px; 
+    background-color: rgb(101, 69, 28);
+    height: 50px;
+    font-family: sans-serif;
+}
+.left-nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+    gap: 2rem;
+    font-weight: 600;
+}
+.left-nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.right-nav a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid white;
+    background-color: white;
+    color:  rgb(102, 69, 69);
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.left-nav ul li a:hover{
+    text-decoration: underline;
+}
+.right-nav a:hover{
+    color:white;
+    text-decoration: underline;
+    background-color: black;
+    border: 1px solid black;
+}
+.container{
+    margin: auto;
+}
+.card{
+    width: 38%;
+    height: 650px;
+    background-color: white;
+    margin:40px auto;
+    padding: 20px 40px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+.card h1{
+    text-align: center;
+    color: rgb(102, 69, 69);
+    margin-bottom:30px ;
+}
+.name{
+    border: 2px solid rgb(131, 129, 129) ;
+    border-radius: 20px;
+    height: 30px;
+    padding: 10px;
+}
+.book{
+    color: gray;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.pr{
+    border: 2px solid rgb(131, 129, 129) ;
+    border-radius: 20px;
+    height: 30px;
+    padding: 10px;
+}
+.price{
+    color: gray;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.quantity{
+    color: gray;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.qnt{
+    border: 2px solid rgb(131, 129, 129) ;
+    border-radius: 20px;
+    height: 30px;
+    padding: 10px;
+    width: 80px;
+}
+.date{
+    color: gray;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.dt{
+    border: 2px solid rgb(131, 129, 129) ;
+    border-radius: 20px;
+    height: 30px;
+    padding: 10px;
+}
+.yrname{
+    color: gray;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.nm{
+    border: 2px solid rgb(131, 129, 129) ;
+    border-radius: 20px;
+    height: 30px;
+    padding: 10px;
+}
+.gmail{
+    color: gray;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.email{
+    border: 2px solid rgb(131, 129, 129) ;
+    border-radius: 20px;
+    height: 30px;
+    padding: 10px;
+}
+.phone{
+    color: gray;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.phn{
+    border: 2px solid rgb(131, 129, 129) ;
+    border-radius: 20px;
+    height: 30px;
+    padding: 10px;
+}
+.address{
+    color: gray;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.add{
+    border: 2px solid rgb(131, 129, 129) ;
+    border-radius: 20px;
+    width: 430px;
+    height: 59px;
+    padding: 10px;
+}
+.payment{
+    color: gray;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.pay{
+    border: 2px solid rgb(131, 129, 129) ;
+    border-radius: 20px;
+    /* width: 430px; */
+    /* height: 59px; */
+    padding: 10px;
+}
+#cash{
+    color: gray;
+    font-weight: 600;
+}
+.order{
+    margin: 10px 130px;
+    border: 1px solid gray;
+    border-radius: 30px;
+    padding:20px 35px;
+    background-color:rgb(102, 69, 69); ;
+}
+.order a{
+    text-decoration: none;
+    color: white;
+}
+.order:hover{
+    background-color: rgb(52, 10, 10);
+}
+footer{
+    background-color:rgb(101, 69, 28) ;
+    color: white;
+    text-align: center;
+    margin-top: 80px;
+}
+.social{
+    padding: 50px;
+    font-size: 1.5rem;
+}
+.social h3{
+    margin-bottom: 30px;
+}
+.social a{
+    color: white;
+    padding-top: 20px;
+    letter-spacing: 2rem;
+}
+.social a:hover{
+    color: black;
+}
+.text_foot ul{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    
+  }
+  .text_foot ul li{
+    color: white;
+  }
+  .mark{
+    margin-left:  10px;
+
+  }
+  .copyright{
+    color: white;
+    margin-top: 30px ;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+  }
