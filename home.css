@@ -110,3 +110,62 @@ footer{
     text-align: center;
   }
   
+/* dark mode */
+/* Dark mode styles */
+body.dark {
+    background-color: #3f3636;
+    color: white;
+}
+
+nav.dark {
+    background-color: #2c1f1f;
+}
+
+.left-nav ul li a.dark {
+    color: #e0e0e0;
+}
+
+.right-nav a.dark {
+    background-color: #333;
+    color: white;
+    border: 1px solid #e0e0e0;
+}
+
+footer.dark {
+    background-color: #2c1f1f;
+    color: #e0e0e0;
+}
+
+.social a.dark {
+    color: #e0e0e0;
+}
+
+.social a.dark:hover {
+    color: #bbbbbb;
+}
+
+.text_foot ul li.dark {
+    color: #e0e0e0;
+}
+
+.copyright.dark {
+    color: #e0e0e0;
+}
+
+/* Dark mode button */
+.dark-mode-btn {
+    margin-left: 1rem;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    border: none;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+body.dark .dark-mode-btn {
+    background-color: #333;
+    color: white;
+}
+
