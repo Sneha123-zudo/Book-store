@@ -13,14 +13,19 @@
             <ul>
                 <li><a href="home.html">HOME</a></li>
                 <li><a href="../bookpage/index.html">BOOKS</a></li>
-                <!-- <li><a href="../cartpage/cart.html">CART</a></li> -->
                 <li><a href="">CONTACT</a></li>
             </ul>
         </div>
         <div class="right-nav">
             <a href="loginform/loginform/index.html">LOGIN</a>
+            <!-- Dark mode toggle button -->
+            <button id="darkModeToggle" class="dark-mode-btn">
+                <i id="darkModeIcon" class="bi bi-brightness-high"></i>
+            </button>
+            
         </div>
     </nav>
+    
     <div class="container">
         <img src="home.jpeg" alt="">
         <div class="text">
@@ -48,5 +53,58 @@
             <span>&copy;2024 , All rights are reserved</span>
         </div>
     </footer>
+    <script>
+        const darkModeToggle = document.getElementById("darkModeToggle");
+        const darkModeIcon = document.getElementById("darkModeIcon");
+        const body = document.body;
+        const nav = document.querySelector("nav");
+        const navLinks = document.querySelectorAll(".left-nav ul li a");
+        const rightNavLink = document.querySelector(".right-nav a");
+        const footer = document.querySelector("footer");
+        const socialLinks = document.querySelectorAll(".social a");
+        const textFootLinks = document.querySelectorAll(".text_foot ul li");
+        const copyrightText = document.querySelector(".copyright");
+    
+        // checking if the user has previously selected dark mode
+        if (localStorage.getItem("darkMode") === "enabled") {
+            body.classList.add("dark");
+            nav.classList.add("dark");
+            footer.classList.add("dark");
+            darkModeIcon.classList.remove("bi-brightness-high");
+            darkModeIcon.classList.add("bi-moon");
+            navLinks.forEach(link => link.classList.add("dark"));
+            rightNavLink.classList.add("dark");
+            socialLinks.forEach(link => link.classList.add("dark"));
+            textFootLinks.forEach(link => link.classList.add("dark"));
+            copyrightText.classList.add("dark");
+        }
+    
+        darkModeToggle.addEventListener("click", () => {
+            body.classList.toggle("dark");
+            nav.classList.toggle("dark");
+            footer.classList.toggle("dark");
+    
+            // toggling sun and moon icons
+            if (body.classList.contains("dark")) {
+                darkModeIcon.classList.remove("bi-brightness-high");
+                darkModeIcon.classList.add("bi-moon");
+                localStorage.setItem("darkMode", "enabled");
+            } else {
+                darkModeIcon.classList.remove("bi-moon");
+                darkModeIcon.classList.add("bi-brightness-high");
+                localStorage.setItem("darkMode", "disabled");
+            }
+    
+            // update text colors
+            navLinks.forEach(link => link.classList.toggle("dark"));
+            rightNavLink.classList.toggle("dark");
+            socialLinks.forEach(link => link.classList.toggle("dark"));
+            textFootLinks.forEach(link => link.classList.toggle("dark"));
+            copyrightText.classList.toggle("dark");
+        });
+    </script>
+    
+    
+    
 </body>
 </html>
