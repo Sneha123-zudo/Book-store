@@ -13,15 +13,25 @@
 <body>
     <nav>
         <div class="left-nav">
-            <ul>
-                <li><a href="../Homepage/home.html">HOME</a></li>
-                <li><a href="index.html">BOOKS</a></li>
-                <!-- <li><a href="./cartpage/cart.html">CART</a></li> -->
-                <li><a href="">CONTACT</a></li>
-            </ul>
+            <img src="https://cdn.pixabay.com/photo/2017/01/13/13/11/book-1977235_640.png" alt="">
+               
         </div>
+        <input type="checkbox" id="menu">
+        <label for="menu" class="ham">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
         <div class="right-nav">
+            <a href="../home.html">HOME</a>
+            <a href="index.html">BOOKS</a>
+            <a href="">CONTACT</a>
             <a href="../loginform/loginform/index.html">LOGIN</a>
+            <!-- Dark mode toggle button -->
+            <button id="darkModeToggle" class="dark-mode-btn">
+                <i id="darkModeIcon" class="bi bi-brightness-high"></i>
+            </button>
+            
         </div>
     </nav>
     <div class="content">
@@ -184,7 +194,7 @@
             </ul>
         </div>
         <div class="copyright">
-            <span>&copy;2024 , All rights are reserved</span>
+            <span>&copy;2024 , All rights reserved</span>
         </div>
     </footer>
 </body>
