@@ -12,8 +12,12 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('background2jpg.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('https://wallpapercave.com/uwp/uwp3825547.webp') no-repeat center center fixed;
+    background-size: cover;
+    font-family: "Poppins", sans-serif;
 }
+
 
 /* Main Container */
 .wrapper {
@@ -116,7 +120,6 @@ body {
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
-    box-shadow: 0 10px 15px rgba(22, 201, 227, 0.3);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
