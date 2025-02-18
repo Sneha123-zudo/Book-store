@@ -2,31 +2,42 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing:none;
     font-family: "Roboto",sans-serif;
 }
 
 .wrapper {
-    max-width: 75%;
-    margin: auto;
+    max-width: 100%;
+    text-align: center;
 }
     .wrapper >p,
     .wrapper >h1{
-        margin: 1.5rem 0;
-        text-align: center;
+        background-color:burlywood;
+        color: black;
+        cursor: pointer;
+        font-size: 2.0rem ;
+        width: 100%;
+        padding: 1rem 1.5rem;
+        border:none;
+        outline: none;
+        transition: 0.4s;
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+        align-items:center;
     }
     
     .wrapper{
-        letter-spacing: 3px;
+        letter-spacing: 1px;
     }
 .accordion{
-    background-color: hotpink;
+    background-color:bisque;
     color: rgba(0,0,0,0.8);
     cursor: pointer;
-    font-size: 1.2rem ;
+    font-size: 1.0rem ;
     width: 100%;
-    padding: 2rem 2.5rem;
-    border: none;
+    padding: 1rem 1.5rem;
+    border:none;
     outline: none;
     transition: 0.4s;
     display: flex;
@@ -35,8 +46,24 @@
     font-weight: bold;
 }
 .accordion i{
-    font-size: 1.6rem ;
+    font-size: 1.0rem ;
 }
-    .active, .accordion:hover{
-        background-color: darkmagenta;
+
+    .faq-answer{
+        background-color:brown;
+        color: rgba(0,0,0,0.8);
+        cursor: pointer;
+        font-size: 1.0rem ;
+        width: 100%;
+        padding: 1rem 1.5rem;
+        border:none;
+        outline: none;
+        transition: 0.4s;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+    }
+    .faq-answer i{
+        font-size: 1.0rem ;
     }
