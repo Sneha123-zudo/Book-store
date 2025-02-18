@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        .faq-container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .faq-item {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+        .faq-question {
+            cursor: pointer;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-answer {
+            display: none;
+            padding-top: 10px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="faq-container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <div class="faq-question">What is this platform? <span>+</span></div>
+            <div class="faq-answer">This is an online book platform where you can explore, read, and buy books.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Do I need an account to purchase? <span>+</span></div>
+            <div class="faq-answer">Yes, an account is required to make purchases and access your library.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">What payment methods do you accept? <span>+</span></div>
+            <div class="faq-answer">We accept credit/debit cards, PayPal, and other secure payment options.</div>
+        </div>
+    </div>
+    
+    <script>
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', () => {
+                const answer = item.nextElementSibling;
+                const isVisible = answer.style.display === 'block';
+                document.querySelectorAll('.faq-answer').forEach(ans => ans.style.display = 'none');
+                document.querySelectorAll('.faq-question span').forEach(span => span.textContent = '+');
+                
+                if (!isVisible) {
+                    answer.style.display = 'block';
+                    item.querySelector('span').textContent = '-';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
