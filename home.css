@@ -1,3 +1,19 @@
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 10px;
+    background-color: #FEEEE5;
+}
+::-webkit-scrollbar:hover {
+    background-color: #DADEFF;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #7369C5, #E9AAC1);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #E9AAC1, #7369C5);
+}
+
 *{
     margin: 0px;
     padding: 0px;
