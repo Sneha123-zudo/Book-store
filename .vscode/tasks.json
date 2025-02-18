@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "Live Preview",
+			"workspacePath": "/workspaces/Book-store",
+			"problemMatcher": [
+				"$tsc"
+			],
+			"label": "Live Preview: Run Server"
+		}
+	]
+}
