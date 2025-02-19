@@ -269,6 +269,7 @@
             <span>&copy;2024 , All rights reserved</span>
         </div>
     </footer>
+    <button id="scrollToTopBtn" title="Scroll to Top">⇧</button>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
     <script>
@@ -282,7 +283,7 @@
         const socialLinks = document.querySelectorAll(".social a");
         const textFootLinks = document.querySelectorAll(".text_foot ul li");
         const copyrightText = document.querySelector(".copyright");
-    
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
         // checking if the user has previously selected dark mode
         if (localStorage.getItem("darkMode") === "enabled") {
             body.classList.add("dark");
@@ -322,6 +323,21 @@
         });
 
         AOS.init({ duration: 1000, once: false });
+
+        // Show button when scrolling down
+    window.onscroll = function () {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            scrollToTopBtn.style.display = "block";
+        } else {
+            scrollToTopBtn.style.display = "none";
+        }
+    };
+
+    // Scroll to top when button is clicked
+    scrollToTopBtn.onclick = function () {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+    };
     </script>
     
     
