@@ -661,7 +661,7 @@ footer{
 
   .text_foot ul li a {
     text-decoration: none;  /* Removes underline */
-    color: white;  /* Set link color to white */
+    color: black;  /* Set link color to white */
     transition: color 0.3s ease;  /* Optional: smooth transition on hover */
 }
 
