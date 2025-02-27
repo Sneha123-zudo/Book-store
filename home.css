@@ -150,6 +150,20 @@ body.dark .contact-info ul li p {
 body.dark .map-container {
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
 }
+body.dark{
+    background: none;
+    background: #454343;
+}
+body.dark nav{
+    background: #181818;
+}
+body.dark .right-nav a{
+    color: rgb(188, 184, 184);
+}
+body.dark #about{
+    background: none;
+    background: #414141;
+}
 
 .contact-info ul li p a {
     color: #4a90e2;
