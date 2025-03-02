@@ -57,16 +57,16 @@
                 <div class="form-section">
                     <h2>Payment Method</h2>
                     <div class="payment-options">
-                        <div class="payment-option">
+                        <div class="payment-option" id="cash">
                             <input type="radio" id="cod" name="payment" value="cod" required>
-                            <label for="cod">
+                            <label  for="cod">
                                 <i class="bi bi-cash"></i>
                                 Cash on Delivery
                             </label>
                         </div>
-                        <div class="payment-option">
+                        <div class="payment-option" id="gpay">
                             <input type="radio" id="upi" name="payment" value="upi" required>
-                            <label for="upi">
+                            <label  for="upi">
                                 <i class="bi bi-credit-card"></i>
                                 Google Pay UPI
                             </label>
@@ -108,5 +108,24 @@
             <p>&copy; 2024 BookStore. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+        let toggle_cash = false, toggle_upi = false;
+        document.getElementById('cod').addEventListener('click', () => {
+            if(!toggle_cash) {
+                document.getElementById('cash').style.backgroundColor = '#dedbd3';
+                document.getElementById('gpay').style.backgroundColor = 'white';
+                toggle_cash = true;
+                toggle_upi = false;
+            }
+        });
+        document.getElementById('upi').addEventListener('click', () => {
+            if(!toggle_upi) {
+                document.getElementById('gpay').style.backgroundColor = '#dedbd3';
+                document.getElementById('cash').style.backgroundColor = 'white';
+                toggle_upi = true;
+                toggle_cash = false;
+            }
+        });
+    </script>
 </body>
 </html>
