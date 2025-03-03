@@ -350,3 +350,19 @@ body.dark .dark-mode-btn {
     background-color: #333;
     color: white;
 }
+
+.review-btn {
+    background-color: #007bff; /* Blue color */
+    color: white;
+    border: none;
+    padding: 3px 3px;
+    font-size: 13px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.review-btn:hover {
+    background-color: #0056b3; 
+}
+

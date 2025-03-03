@@ -1,0 +1,139 @@
+/* General Styles */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #2e8b57, #1e3c72);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* Container */
+.container {
+    width: 50%;
+    max-width: 600px;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Book Details */
+.book-details {
+    text-align: center;
+}
+
+.book-details img {
+    width: 160px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.book-details img:hover {
+    transform: scale(1.05);
+}
+
+h2, h3 {
+    margin: 12px 0;
+    color: #222;
+    font-weight: 600;
+}
+
+/* Review Section */
+.review-section {
+    margin-top: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 90px;
+    padding: 12px;
+    border: 2px solid #bbb;
+    border-radius: 8px;
+    resize: none;
+    font-size: 15px;
+    background: #f9f9f9;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.3);
+    background: white;
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #0056b3, #00408a);
+    transform: scale(1.02);
+}
+
+/* Review Items */
+.review-item {
+    background: #fff;
+    padding: 14px;
+    border-left: 6px solid #007bff;
+    margin-top: 12px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.review-item:hover {
+    transform: scale(1.03);
+}
+
+/* Rating Stars */
+.rating-container {
+    margin-top: 15px;
+}
+
+.star {
+    font-size: 35px;
+    cursor: pointer;
+    transition: transform 0.2s, color 0.3s;
+    margin: 0 5px;
+}
+
+.star:hover {
+    transform: scale(1.2);
+}
+
+/* Star Colors Based on Rating */
+.one { color: rgb(255, 60, 60); }      /* Red */
+.two { color: rgb(255, 140, 0); }      /* Orange */
+.three { color: rgb(255, 214, 10); }   /* Yellow */
+.four { color: rgb(255, 255, 0); }     /* Gold */
+.five { color: rgb(50, 200, 50); }     /* Green */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .star {
+        font-size: 30px;
+    }
+}
