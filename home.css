@@ -23,7 +23,22 @@ body{
     width: 100%;
     height: 100%;
 }
-
+#loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #131313;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+#loader img{
+    width: 150px;
+    height: 150px;
+}
 .contact-section {
     display: flex;
     justify-content: space-between;
