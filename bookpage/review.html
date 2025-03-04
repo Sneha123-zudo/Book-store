@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Review</title>
+    <link rel="stylesheet" href="review.css">
+</head>
+<body>
+    <div class="container">
+        <div class="book-details">
+            <img id="bookImage" src="" alt="Book Image">
+            <h2 id="bookTitle">Book Title</h2>
+            <h3 id="bookAuthor">By Author</h3>
+        </div>
+
+        <div class="review-section">
+            <h2>Reviews & Ratings</h2>
+            <div id="reviews"></div>
+
+            <h3>Add a Review</h3>
+            <textarea id="reviewText" placeholder="Write your review..."></textarea>
+            <div class="rating-container">
+                <span onclick="rate(1)" class="star">★</span>
+                <span onclick="rate(2)" class="star">★</span>
+                <span onclick="rate(3)" class="star">★</span>
+                <span onclick="rate(4)" class="star">★</span>
+                <span onclick="rate(5)" class="star">★</span>
+                <h3 id="output">Rating is: 0/5</h3>
+            </div>
+            <input type="hidden" id="selectedRating" value="0">
+            <button onclick="addReview()">Submit Review</button>
+        </div>
+    </div>
+    <script src="review.js"></script>
+</body>
+</html>
