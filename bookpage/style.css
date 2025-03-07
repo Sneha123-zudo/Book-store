@@ -159,6 +159,9 @@ nav{
   left: 90px;
 
 }
+body.dark-mode nav {
+    background: #181818;
+}
 @media screen and (max-width:851px){
     .right-nav{
          display: none;
@@ -573,11 +576,11 @@ footer.dark {
 }
 
 .dark-mode .container {
-    background-color: #1a1a1a;
+    background-color: #3f3636;
 }
 
-.dark-mode .container h3 {
-    color: #f5f5f5;
+.dark-mode .container h3#coll {
+    color: #a26f6f;
 }
 
 .dark-mode .card1 {
