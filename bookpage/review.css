@@ -9,6 +9,7 @@ body {
     align-items: center;
     min-height: 100vh;
     text-align: center;
+    padding-top: 100px;
 }
 
 /* Container */
@@ -72,7 +73,6 @@ textarea:focus {
 
 /* Button Styling */
 button {
-    width: 100%;
     padding: 14px;
     background: linear-gradient(135deg, #007bff, #0056b3);
     color: white;
@@ -136,4 +136,51 @@ button:hover {
     .star {
         font-size: 30px;
     }
+}
+
+/* Dark Mode */
+body.dark {
+    background: #3f3636;
+    color: #f5f5f5;
+}
+
+.dark .container {
+    background: rgba(30, 30, 30, 0.95);
+    box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.1);
+}
+
+.dark h2, .dark h3 {
+    color: #ddd;
+}
+
+.dark textarea {
+    background: #333;
+    color: #fff;
+    border-color: #555;
+}
+
+.dark textarea:focus {
+    border-color: #4a90e2;
+    box-shadow: 0px 0px 10px rgba(74, 144, 226, 0.4);
+}
+
+.dark button {
+    background: linear-gradient(135deg, #4a90e2, #2266c2);
+}
+
+.dark button:hover {
+    background: linear-gradient(135deg, #2266c2, #1b4a94);
+}
+
+.dark .review-item {
+    background: #222;
+    border-left-color: #4a90e2;
+}
+
+.dark .star {
+    color: #bbb;
+}
+
+.dark .star:hover {
+    color: #fff;
 }
