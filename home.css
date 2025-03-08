@@ -554,6 +554,44 @@ section#new-arrival .new-collection .collection-book .collection-content .collec
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+    .dark .why-us {
+        align-items: center;
+        background-color: #2b2525;
+        color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .dark .why-us h2 {
+        color: #f5f5f5;
+        font-size: 1.8rem;
+    }
+
+    .dark .why-us ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .dark .why-us li {
+        background-color: #1e1e1e;
+        padding: 10px 15px;
+        margin: 8px 0;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .dark .why-us li::before {
+        content: "✔️";
+        margin-right: 10px;
+        color: #4caf50;
+    }
+
+
 .categories {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
